@@ -53,11 +53,10 @@ export default function Contact() {
                     Studio Address
                   </h3>
                   <p className="text-base font-light text-[var(--color-deep-charcoal)]/80">
-                    123 Design Street
+                     Sheikh Zayed Road, 
+                    
                     <br />
-                    Architecture District
-                    <br />
-                    New York, NY 10001
+                    Dubai,  UAE
                   </p>
                 </div>
 
@@ -66,10 +65,10 @@ export default function Contact() {
                     Contact Email
                   </h3>
                   <a
-                    href="mailto:hello@studioarchitektur.com"
+                    href="mailto:binkhotarchitects@gmail.com"
                     className="text-base font-light text-[var(--color-deep-charcoal)]/80 link-underline hover:text-[var(--color-muted-olive)] transition-colors duration-300"
                   >
-                    hello@studioarchitektur.com
+                    binkhotarchitects@gmail.com
                   </a>
                 </div>
 
@@ -79,23 +78,23 @@ export default function Contact() {
                   </h3>
                   <div className="flex space-x-6">
                     <a
-                      href="#"
+                      href="https://www.instagram.com/bin_khot_architects?igsh=MW9lZ3F4N2VmdWNkdg=="
                       className="text-[var(--color-deep-charcoal)]/60 hover:text-[var(--color-deep-charcoal)] transition-colors duration-300 text-sm tracking-wider uppercase font-medium link-underline"
                     >
                       Instagram
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/sharabil-khot-842134248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       className="text-[var(--color-deep-charcoal)]/60 hover:text-[var(--color-deep-charcoal)] transition-colors duration-300 text-sm tracking-wider uppercase font-medium link-underline"
                     >
                       LinkedIn
                     </a>
-                    <a
+                    {/* <a
                       href="#"
                       className="text-[var(--color-deep-charcoal)]/60 hover:text-[var(--color-deep-charcoal)] transition-colors duration-300 text-sm tracking-wider uppercase font-medium link-underline"
                     >
                       Pinterest
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

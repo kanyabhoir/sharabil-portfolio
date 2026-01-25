@@ -50,7 +50,7 @@ export default function Navigation() {
             onClick={(e) => handleNavClick(e, '#home')}
             className="text-xl font-serif font-semibold tracking-tight text-[var(--color-deep-charcoal)] transition-colors duration-300 hover:text-[var(--color-muted-olive)]"
           >
-            Studio Architektur
+            Studio BinKhotArchitects
           </a>
 
           {/* Desktop Navigation */}

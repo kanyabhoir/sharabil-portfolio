@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-serif font-semibold text-[var(--color-deep-charcoal)] mb-4">
-              Studio Architektur
+              Studio BinKhotArchitects
             </h3>
             <p className="text-sm font-light text-[var(--color-deep-charcoal)]/60 leading-relaxed">
               Designing spaces that shape experiences. Premium architecture and design
@@ -84,7 +84,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="pt-8 border-t border-[var(--color-concrete-gray)]">
           <p className="text-xs text-[var(--color-deep-charcoal)]/50 text-center font-light">
-            © {new Date().getFullYear()} Studio Architektur. All rights reserved.
+            © {new Date().getFullYear()} Studio BinKhotArchitects. All rights reserved.
           </p>
         </div>
       </div>

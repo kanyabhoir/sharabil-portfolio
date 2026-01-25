@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Studio Architektur | Premium Architecture & Design",
+  title: "Studio BinKhotArchitects | Premium Architecture & Design",
   description: "Designing spaces that shape experiences. A curated portfolio of architectural excellence, interior design, and urban planning.",
   keywords: "architecture, interior design, urban planning, architectural portfolio, premium design",
 };
