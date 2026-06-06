@@ -23,15 +23,15 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_a4xb74d",  //  "YOUR_SERVICE_ID",
-        "template_g3vraje", //  "YOUR_TEMPLATE_ID",
+        "service_a4xb74d", //  "SERVICE_ID",
+        "template_g3vraje", //  "TEMPLATE_ID",
         {
           name: formData.name,
           email: formData.email,
           projectType: formData.projectType,
           message: formData.message,
         },
-        "7Xif_7Y11hrGSa_pg", //  "YOUR_PUBLIC_KEY"
+        "7Xif_7Y11hrGSa_pg", //  "PUBLIC_KEY"
       );
 
       alert("Message sent successfully!");
@@ -43,8 +43,8 @@ export default function Contact() {
         message: "",
       });
     } catch (error) {
-      console.log(error);
-      alert("Failed to send message");
+      console.log("EmailJS Error:", error);
+      alert(JSON.stringify(error));
     }
   };
 

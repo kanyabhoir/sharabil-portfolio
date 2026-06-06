@@ -71,12 +71,12 @@ export default function Footer() {
               >
                 LinkedIn
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-sm font-light text-[var(--color-deep-charcoal)]/70 hover:text-[var(--color-deep-charcoal)] transition-colors duration-300 link-underline w-fit"
               >
                 Pinterest
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
