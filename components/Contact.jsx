@@ -1,13 +1,14 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    projectType: '',
-    message: '',
+    name: "",
+    email: "",
+    projectType: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -17,17 +18,34 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      projectType: '',
-      message: '',
-    });
+
+    try {
+      await emailjs.send(
+        "service_a4xb74d",  //  "YOUR_SERVICE_ID",
+        "template_g3vraje", //  "YOUR_TEMPLATE_ID",
+        {
+          name: formData.name,
+          email: formData.email,
+          projectType: formData.projectType,
+          message: formData.message,
+        },
+        "7Xif_7Y11hrGSa_pg", //  "YOUR_PUBLIC_KEY"
+      );
+
+      alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        projectType: "",
+        message: "",
+      });
+    } catch (error) {
+      console.log(error);
+      alert("Failed to send message");
+    }
   };
 
   return (
@@ -42,9 +60,9 @@ export default function Contact() {
               </h2>
 
               <p className="text-base font-light text-[var(--color-deep-charcoal)]/80 mb-12 leading-relaxed">
-                We're always interested in new projects and collaborations. Whether you're
-                planning a new build, renovation, or simply exploring possibilities, we'd
-                love to hear from you.
+                We're always interested in new projects and collaborations.
+                Whether you're planning a new build, renovation, or simply
+                exploring possibilities, we'd love to hear from you.
               </p>
 
               <div className="space-y-8">
@@ -53,10 +71,9 @@ export default function Contact() {
                     Studio Address
                   </h3>
                   <p className="text-base font-light text-[var(--color-deep-charcoal)]/80">
-                     Sheikh Zayed Road, 
-                    
+                    Sheikh Zayed Road,
                     <br />
-                    Dubai,  UAE
+                    Dubai, UAE
                   </p>
                 </div>
 
@@ -199,4 +216,3 @@ export default function Contact() {
     </section>
   );
 }
-
